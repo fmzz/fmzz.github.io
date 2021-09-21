@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>口味分析</title>
+    <script>
+        function setHalfVolume() {
+        var myAudio = document.getElementById("audio1");  
+        myAudio.volume = 0.2; 
+        }
+
+    </script>
+    <style>
+        div {
+            background-image: url(图库/封面.jpeg);
+        }
+        h2 {
+            color:hotpink;
+            text-align: center;
+        }
+        h3 {
+            color:tomato;
+        }
+        Y {
+            color: greenyellow;
+        }
+        G {
+            color: green;
+        }
+        B {
+            color: rgb(94, 69, 69);
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <audio autoplay="true" id= "audio1" controls="controls" onloadeddata="setHalfVolume()">
+        <source src="曲库/快乐小神仙.mp3"  type="audio/mp3">
+    </audio>
+     <h2>答题寻找进入快乐星球的传送门</h2>
+     <h3>
+    <ol>
+        <li>假如：
+            你是宫中的太医。<br>
+            皇上心狠手辣，大家都很怕他。<br>
+            这日皇上病了，挺严重，宣你去诊治，<br>你诊了半天，确定是不治之症，他可能活不过一个月。<br>
+            皇上问你病情如何？<br>
+            </li>
+            你的回答？<br>
+            <input id="走" type="radio" name="flavor"> <label for="走">老臣还有要事在身，先行告退</label><br>
+            <input id="mei" type="radio" name="flavor"> <label for="mei">皇上，你命不久矣 啊</label><br>
+            <input id="huida" type="radio" name="flavor"> <label for="huida">其他回答：<br>
+            </label> <textarea rows="7">老臣从医以来，从未见过如此匪夷所思之症状。臣虽然没有有效的疗法，但是臣听说隔壁的王太医对此症状颇有研究</textarea><br>
+            <span> </span><br>
+            <span> </span><br>
+            <span> </span><br>
+            <span> </span><br>
+            <span> </span><br> 
+        <li>你喜欢什么馅的月饼？</li><br>
+        <input id="wu" type="checkbox" name="flavor"><label for="wu"> 五香牛肉味 </label>   <br>
+        <input id="shui" type="checkbox" name="flavor"><label for="shui"> 水果味儿</label> <br>
+        <input id="wuren" type="checkbox" name="flavor"><label for="wuren"> 五仁yyds</label> <br>
+        <input id="lian" type="checkbox" name="flavor"><label for="lian"> 莲蓉蛋黄</label> <br>
+        <span> </span><br>
+        <span> </span><br>
+        <span> </span><br>
+        <span> </span><br>
+        <span> </span><br> 
+        <li>请选一种你最喜欢的食物？</li><br>
+        <input id="liu" type="radio" name="food"><label for="liu"> <Y>榴莲</Y> </label><br><img src="图库/榴莲.PNG" width="100"><br>
+        <input id="chou" type="radio" name="food"> <label for="chou"> <G>臭豆腐</G> </label> <br><img src="图库/臭豆腐.JPG" width="90"><br>
+        <input id="fei" type="radio" name="food"> <label for="fei"> <B>鲱鱼罐头</B> </label> <br><img src="图库/鲱鱼罐头.JPG" width="100"><br>
+        <input id="ex" type="radio" name="food"><label for="ex">其他：</label> <input id="ex" placeholder="例如烤鸭、麻花等"><br>
+        <h1>点击进入☞<a href="快乐星球.html" >传送门</a>☜</h1>
+    </ol>
+</h3>
+    </div>
+</body>
+</html>
