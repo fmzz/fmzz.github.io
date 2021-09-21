@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神秘的入口</title>
+    <script>
+        function setHalfVolume() {
+        var myAudio = document.getElementById("audio1");  
+        myAudio.volume = 0.5; //Changed this to 0.5 or 50% volume since the function is called Set Half Volume ;)
+        }
+
+    </script>
+        <style>
+            div {
+                width :1200px;
+                height: 2200px;
+                background-image: url(图库/背景.jpeg);
+                /*background-repeat: no-repeat;*/
+                background-position: center center;
+                background-attachment: fixed;
+            }
+            h1 {
+                text-align: center;
+            }
+            h2 {
+                text-align: center;
+            }
+            h3 {
+                text-align: center;
+            }
+            h4 {
+                text-align: center;
+            }
+            Y {
+                color: rgb(198, 201, 18);
+            }
+            G {
+                color: green;
+            }
+            B {
+                color: blue;
+                text-align: center;
+            }
+            T {
+                color: tomato;
+                font-size: 200%;
+            }
+            M {
+                color: pink;
+            }
+        </style>
+    </head>
+    <body>   
+        <div><audio hidden autoplay="true" loop="true" id= "audio1" controls="controls" onloadeddata="setHalfVolume()">
+            <source src="曲库/bjyy.mp3"  type="audio/mp3">
+        </audio><br>
+        <T> ↘<br>
+        先慢慢<br>缩放↖ 往右滑<br>
+         再往下滑☟</T>
+        </div>
+        <h3> 诶？！有人来了么</h3><br>
+        <h2> 看姑娘<M> 眉清目秀、天生丽质 </M> (ง •̀_•́)ง 想必就是主人说的钟敏了</h2><br>
+        <h4>我是<T>Tomato</T><img src="图库/小番茄.jpg" width="30">，主人的精灵，姐姐叫我小番就可以 (｢･ω･)｢嘿</h4>
+        <h4>主人让我带你去另一个地方，不过在此之前，需要做个小调查，准备好了吗？系上安全带出发吧</h4><br>
+
+        <B><h1><a href="测试题.html" >☞☞☞☞GO☜☜☜☜</a></h1></B>
+    </body>
+</html>
